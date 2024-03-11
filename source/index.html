@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css file -->
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>Document</title>
+
+    <style>
+        .container-fluit {
+            width: 85%;
+            margin: 0 auto;
+            max-width: 1440px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-zinc-800 text-white py-4 z-50 fixed w-full shadow-lg shadow-gray-300/50">
+        <div class="container-fluit mx-auto flex justify-between items-center">
+            <nav class="hidden lg:block">
+                <ul class="flex">
+                    <li><a href="#"
+                            class="px-4 h-full text-white py-2 duration-300 hover:bg-gray-500 hover:text-white">Контрагентам</a>
+                    </li>
+                    <li><a href="#"
+                            class="px-4 h-full text-white py-2 duration-300 hover:bg-gray-500 hover:text-white">Дизайнерам</a>
+                    </li>
+                    <li><a href="#"
+                            class="px-4 h-full text-white py-2 duration-300 hover:bg-gray-500 hover:text-white">Вакансии</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <a href="#" class="flex text-white items-center">
+                    <span class="w-[100px] sm:w-[150px]"><img src="./images/logo (3).svg" alt=""></span>
+                </a>
+            </div>
+            <div class="md:hidden">
+                <button id="toggleBtn" class="block text-blue-700 focus:outline-none">
+                    <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path v-if="open" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4 6h16v2H4V6zm16 5H4v2h16v-2zm0 5H4v2h16v-2z" />
+                        <path v-else fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden md:flex">
+                <button class="px-4 py-2 flex items-center gap-2 hover:bg-gray-500 duration-300"><img
+                        src="./images/gridicons_search (1).svg" alt=""> <span>Поиск</span></button>
+                <button class="px-4 py-2 hover:bg-gray-500 duration-300">Вход/Регистрация</button>
+            </div>
+        </div>
+        <div id="menu"
+            class="absolute w-full md:hidden bg-zinc-800 translate-x-[-100%] z-[-10] duration-200 pt-[30px] shadow-lg shadow-gray-300/50">
+            <ul class="flex container-fluit  flex-col items-center gap-3" x-show="open" @click.away="open = false">
+                <li class="w-full"><a href="#"
+                        class="block px-4 py-2 hover:bg-gray-500 duration-300 text-sm text-white border-b-[2px] border-transparent hover:border-gray-300">Home</a>
+                </li>
+                <li class="w-full"><a href="#"
+                        class="block px-4 py-2 hover:bg-gray-500 duration-300 text-sm text-white border-b-[2px] border-transparent hover:border-gray-300">About</a>
+                </li>
+                <li class="w-full"><a href="#"
+                        class="block mb-1 px-4 py-2 hover:bg-gray-500 duration-300 text-sm text-white border-b-[2px] border-transparent hover:border-gray-300">Contact
+                        us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="w-full bg-center object-none bg-no-repeat bg-[url('./images/hero.png')]">
+        <div class="container-fluit">
+            <h1
+                class="pt-[300px] sm:pt-[350px] md:pt-[500px] pb-[20px] sm:pb-[30px] md:pb-50px text-center font-bold text-[30px] sm:text-[32px] md:text-36px text-white">
+                Долго,
+                дорого, богато!</h1>
+            <div class="pb-[50px] w-full text-center bg-transparent">
+                <button
+                    class="border-2 hover:bg-gray-600 text-[14px] sm:text-[18px] font-medium md:px-4 md:py-2 duration-200 border-solid border-white text-white px-3 py-1">каталог
+                    изделий</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
