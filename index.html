@@ -5,10 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+
     <!-- css file -->
     <link rel="stylesheet" href="./styles/output.css" />
     <link rel="stylesheet" href="./styles/index.css">
-    <title>Document</title>
+    <title>Nilufar</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         .container-fluit {
@@ -25,19 +35,21 @@
             <nav class="hidden lg:block">
                 <ul class="flex">
                     <li><a href="#"
-                            class="px-4 h-full text-white py-2 duration-300 hover:bg-gray-500 hover:text-white">Контрагентам</a>
+                            class="px-4 h-full text-white py-2 duration-300 hover:bg-gray-500 hover:text-white">Zargarlar</a>
                     </li>
                     <li><a href="#"
-                            class="px-4 h-full text-white py-2 duration-300 hover:bg-gray-500 hover:text-white">Дизайнерам</a>
+                            class="px-4 h-full text-white py-2 duration-300 hover:bg-gray-500 hover:text-white">Dizaynerlar
+                            uchun</a>
                     </li>
                     <li><a href="#"
-                            class="px-4 h-full text-white py-2 duration-300 hover:bg-gray-500 hover:text-white">Вакансии</a>
+                            class="px-4 h-full text-white py-2 duration-300 hover:bg-gray-500 hover:text-white">Bo'sh
+                            ish o'rinlari</a>
                     </li>
                 </ul>
             </nav>
-            <div>
-                <a href="#" class="flex text-white items-center">
-                    <span class="w-[100px] sm:w-[150px]"><img src="./assets/images/logo (3).svg" alt=""></span>
+            <div style="margin-right: 100px;">
+                <a href="#" class="flex text-red items-center text-3xl" style="font-family: Marcellus SC;">
+                    Nilufar
                 </a>
             </div>
             <div class="md:hidden">
@@ -52,22 +64,22 @@
             </div>
             <div class="hidden md:flex">
                 <button class="px-4 py-2 flex items-center gap-2 hover:bg-gray-500 duration-300"><img
-                        src="./assets/images/gridicons_search (1).svg" alt=""> <span>Поиск</span></button>
-                <button class="px-4 py-2 hover:bg-gray-500 duration-300">Вход/Регистрация</button>
+                        src="./assets/images/gridicons_search (1).svg" alt=""> <span>qidirmoq</span></button>
+                <button class="px-4 py-2 hover:bg-gray-500 duration-300">ro'yxatdan o'tish</button>
             </div>
         </div>
         <div id="menu"
             class="absolute w-full md:hidden bg-zinc-800 translate-x-[-100%] z-[-10] duration-200 pt-[30px] shadow-lg shadow-gray-300/50">
             <ul class="flex container-fluit  flex-col items-center gap-3" x-show="open" @click.away="open = false">
                 <li class="w-full"><a href="#"
-                        class="block px-4 py-2 hover:bg-gray-500 duration-300 text-sm text-white border-b-[2px] border-transparent hover:border-gray-300">Home</a>
+                        class="block px-4 py-2 hover:bg-gray-500 duration-300 text-sm text-white border-b-[2px] border-transparent hover:border-gray-300">Zargaralr</a>
                 </li>
                 <li class="w-full"><a href="#"
-                        class="block px-4 py-2 hover:bg-gray-500 duration-300 text-sm text-white border-b-[2px] border-transparent hover:border-gray-300">About</a>
+                        class="block px-4 py-2 hover:bg-gray-500 duration-300 text-sm text-white border-b-[2px] border-transparent hover:border-gray-300">Dizaynerlar</a>
                 </li>
                 <li class="w-full"><a href="#"
-                        class="block mb-1 px-4 py-2 hover:bg-gray-500 duration-300 text-sm text-white border-b-[2px] border-transparent hover:border-gray-300">Contact
-                        us</a></li>
+                        class="block mb-1 px-4 py-2 hover:bg-gray-500 duration-300 text-sm text-white border-b-[2px] border-transparent hover:border-gray-300">Bo'sh
+                        ish o'rinlari</a></li>
             </ul>
         </div>
     </header>
@@ -77,12 +89,11 @@
         <div class="container-fluit">
             <h1
                 class="pt-[300px] sm:pt-[350px] md:pt-[500px] pb-[20px] sm:pb-[30px] md:pb-50px text-center font-bold text-[30px] sm:text-[32px] md:text-36px text-white">
-                Долго,
-                дорого, богато!</h1>
+                Uzoq, qimmat, boy!</h1>
             <div class="pb-[50px] w-full text-center bg-transparent">
                 <button
-                    class="border-2 hover:bg-gray-600 text-[14px] sm:text-[18px] font-medium md:px-4 md:py-2 duration-200 border-solid border-white text-white px-3 py-1">каталог
-                    изделий</button>
+                    class="border-2 hover:bg-gray-600 text-[14px] sm:text-[18px] font-medium md:px-4 md:py-2 duration-200 border-solid border-white text-white px-3 py-1">mahsulot
+                    katalogi</button>
             </div>
         </div>
         <div class="border-t-2 border-solid border-gray-200">
@@ -118,27 +129,27 @@
 
     <section>
         <div class="container-fluit">
-            <p class="text-[24px] font-normal text-center pt-[40px] md:pt-100px">К мероприятиям</p>
-            <h2 class="text-24px sm:text-[28px] md:text-36px text-center pt-[20px] pb-[30px] md:pb-50px">Настоящая
-                красота здесь!</h2>
+            <p class="text-[24px] font-normal text-center pt-[40px] md:pt-100px">Voqealar uchun</p>
+            <h2 class="text-24px sm:text-[28px] md:text-36px text-center pt-[20px] pb-[30px] md:pb-50px">Haqiqiy
+                go'zallik shu yerda!</h2>
             <div>
                 <div class="ap-tab">
                     <ul class="ap-tab-list flex flex-wrap gap-8 pb-[30px] sm:pb-[50px] items-center">
                         <li class="ap-tab-item"><a
                                 class="px-3 py-1 text-[16px] sm:text-[18px] font-medium sm:px-8 sm:py-2 border-2 border-gray-400 bg-white duration-300 hover:bg-gray-600 focus:bg-black focus:text-white hover:text-white hover:border-transparent ap-tab-link"
-                                href="#">Свадьба</a></li>
+                                href="#">To'yga</a></li>
                         <li class="ap-tab-item"><a
                                 class="px-3 py-1 text-[16px] sm:text-[18px] font-medium sm:px-8 sm:py-2 border-2 border-gray-400 bg-white duration-300 hover:bg-gray-600 focus:bg-black focus:text-white hover:text-white hover:border-transparent ap-tab-link"
-                                href="#">МУЖУ</a></li>
+                                href="#">Erkaklarga</a></li>
                         <li class="ap-tab-item"><a
                                 class="px-3 py-1 text-[16px] sm:text-[18px] font-medium sm:px-8 sm:py-2 border-2 border-gray-400 bg-white duration-300 hover:bg-gray-600 focus:bg-black focus:text-white hover:text-white hover:border-transparent ap-tab-link"
-                                href="#">жене</a></li>
+                                href="#">Ayollar</a></li>
                         <li class="ap-tab-item"><a
                                 class="px-3 py-1 text-[16px] sm:text-[18px] font-medium sm:px-8 sm:py-2 border-2 border-gray-400 bg-white duration-300 hover:bg-gray-600 focus:bg-black focus:text-white hover:text-white hover:border-transparent ap-tab-link"
-                                href="#">партнеру</a></li>
+                                href="#">Hamkorlar</a></li>
                         <li class="ap-tab-item"><a
                                 class="px-3 py-1 text-[16px] sm:text-[18px] font-medium sm:px-8 sm:py-2 border-2 border-gray-400 bg-white duration-300 hover:bg-gray-600 focus:bg-black focus:text-white hover:text-white hover:border-transparent ap-tab-link"
-                                href="#">коллекции</a></li>
+                                href="#">To'plamlar</a></li>
                     </ul>
                 </div>
                 <div class="ap-tab-container">
@@ -218,31 +229,32 @@
     <section class="object-cover mt-[50px] md:mt-[100px]"
         style="background-image: url(./assets/images/Rectangle\ 6.png);">
         <div class="container-fluit text-white">
-            <p class="text-[18px] pt-[50px] text-center md:pt-[100px] pb-[20px]">Не знаете, что выбрать?</p>
-            <h2 class="pb-[15px] text-[28px] text-34px text-center">Посетите наши салоны в Москве</h2>
+            <p class="text-[18px] pt-[50px] text-center md:pt-[100px] pb-[20px]">Nima tanlashni bilmayapsizmi?</p>
+            <h2 class="pb-[15px] text-[28px] text-34px text-center">Toshkendagi ko'rgazma zallarimizga tashrif buyuring
+            </h2>
             <p
                 class="line-clamp-5 text-center text-[14px] sm:text-[16px] md:text-18px w-full max-w-[730px] px-5 mx-auto mb-[30px] sm:mb-[50px]">
-                Lorem
-                ipsum dolor sit amet,
-                consectetur adipiscing elit. Ut duis tortor vitae pellentesque egestas quam pulvinar.
-                Pellentesque porttitor velit sit pellentesque. Suspendisse donec pretium id dignissim. Dignissim
-                ultrices eget orci
-                viverra. Egestas quis et ut ultrices imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero
-                viverra ipsum.</p>
+                Koʻrgazma zali yirik xalqaro, respublika, shaxsiy, guruhli va koʻchma vernisajkoʻrgazmalar (yiliga 50
+                dan ziyod)
+                oʻtkazadi; rassomlar, haykaltaroshlar, amaliy bezak sanʼati va miniatyura ustalarining,
+                „GretsiyaOʻzbekiston. qadimiy
+                madaniy aloqalar“, „Toshkent Biyennalesi – 2001 va 2003“, „Zargarlik sanʼati – 2000, 2002“, „Ikuo
+                Xirayama. Buyuk ipak
+                yoʻlida“ (2002) koʻrgazmalari shular jumlasidan.</p>
 
             <div class="w-full text-center">
                 <button
-                    class="text-[14px] sm:text-[18px] mb-[50px] md:mb-[100px] hover:bg-gray-400 duration-300 bg-gray-200 text-gray-900 px-[20px] py-[12px] sm:px-[35px] sm:py-[15px]">наши
-                    салоны</button>
+                    class="text-[14px] sm:text-[18px] mb-[50px] md:mb-[100px] hover:bg-gray-400 duration-300 bg-gray-200 text-gray-900 px-[20px] py-[12px] sm:px-[35px] sm:py-[15px]">Ko'rgazma
+                    zallarimiz</button>
             </div>
         </div>
     </section>
 
     <section>
         <div class="container-fluit">
-            <p class="text-center text-[18px] font-medium pt-[50px] sm:pt-[70px] md:pt-100px">Полезные статьи</p>
-            <h2 class="text-[28px] sm:text-[32px] md:text-[36px] text-center pb-[20px] sm:pb-[40px]">Лучшие советы по
-                подбору дорогих подарков
+            <p class="text-center text-[18px] font-medium pt-[50px] sm:pt-[70px] md:pt-100px">Foydali maqolalar</p>
+            <h2 class="text-[28px] sm:text-[32px] md:text-[36px] text-center pb-[20px] sm:pb-[40px]">Qimmatbaho
+                sovg'alarni tanlash bo'yicha eng yaxshi maslahatlar
             </h2>
             <div
                 class="grid mb-[35px] sm:mb-[50px] grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-between items-center gap-8">
@@ -255,8 +267,7 @@
             </div>
             <div class="w-full text-center">
                 <button
-                    class="text-[14px] sm:text-[18px] mb-[50px] md:mb-[100px] bg-gray-400 duration-600 hover:bg-gray-300 text-gray-900 px-[20px] py-[12px] sm:px-[35px] sm:py-[15px]">наши
-                    салоны</button>
+                    class="text-[14px] sm:text-[18px] mb-[50px] md:mb-[100px] bg-gray-400 duration-600 hover:bg-gray-300 text-gray-900 px-[20px] py-[12px] sm:px-[35px] sm:py-[15px]">Maslahatlar</button>
             </div>
         </div>
     </section>
@@ -275,26 +286,27 @@
 
     <section class="mt-[50px] md:mt-[100px]" style="background-image: url(./assets/images/Rectangle\ 6.png);">
         <div class="container-fluit">
-            <p class="text-white text-[18px] text-center pt-[50px] md:pt-[100px] pb-[15px]">Полезные советы и
-                персональный предложения</p>
-            <h3 class="text-center pb-[35px] md:pb-50px text-white text-[28px] md:text-32px">Эксклюзивная рассылка</h3>
+            <p class="text-white text-[18px] text-center pt-[50px] md:pt-[100px] pb-[15px]">Foydali maslahatlar va
+                shaxsiy takliflar</p>
+            <h3 class="text-center pb-[35px] md:pb-50px text-white text-[28px] md:text-32px">Eksklyuziv axborot
+                byulleteni</h3>
             <div class="flex pb-[40px] md:flex-row gap-8 flex-col md:pb-100px items-center  justify-evenly">
                 <div>
                     <div class="text-white flex items-center gap-2">
-                        <img src="./assets/images/subscribe__icon.svg" alt=""><span>Личный менеджер</span>
+                        <img src="./assets/images/subscribe__icon.svg" alt=""><span>Shaxsiy menejer</span>
                     </div>
                     <div class="text-white flex items-center gap-2">
-                        <img src="./assets/images/subscribe__icon.svg" alt=""><span>Личный менеджер</span>
+                        <img src="./assets/images/subscribe__icon.svg" alt=""><span>Shaxsiy menejer</span>
                     </div>
                     <div class="text-white flex items-center gap-2">
-                        <img src="./assets/images/subscribe__icon.svg" alt=""><span>Личный менеджер</span>
+                        <img src="./assets/images/subscribe__icon.svg" alt=""><span>Shaxsiy menejer</span>
                     </div>
                 </div>
                 <div class="cursor-pointer">
                     <div class="bg-gray-300 px-5 py-3">
                         <input class="py-[12px] px-[8px] placeholder-shown:border-gray-500 ..."
-                            placeholder="Ваш e-mail" />
-                        <button class="bg-black text-white px-[35px] py-[12px]">отправить</button>
+                            placeholder="email kiriting" />
+                        <button class="bg-black text-white px-[35px] py-[12px]">Yuborish</button>
                     </div>
                 </div>
             </div>
@@ -304,8 +316,8 @@
     <footer class="pt-[50px] lg:pt-[80px] ">
         <div class="container-fluit pb-[35px] grid grid-cols-1 gap-[50px] sm:grid-cols-2 lg:grid-cols-4">
             <div>
-                <p class="text-[20px] sm:text-[25px] font-medium border-b-2 border-solid border-gray-400">Полезные
-                    ссылки</p>
+                <p class="text-[20px] sm:text-[25px] font-medium border-b-2 border-solid border-gray-400">Foydali
+                    havolalar</p>
                 <ul>
                     <li>
                         <a href="#">Доставка</a>
@@ -322,7 +334,7 @@
                 </ul>
             </div>
             <div>
-                <p class="text-[20px] sm:text-[25px] font-medium border-b-2 border-solid border-gray-400">оплата</p>
+                <p class="text-[20px] sm:text-[25px] font-medium border-b-2 border-solid border-gray-400">To'lov</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</p>
                 <div class="flex items-center gap-3">
                     <img src="./assets/images/footer/Rectangle 13.svg" alt="">
@@ -330,7 +342,7 @@
                 </div>
             </div>
             <div>
-                <p class="text-[20px] sm:text-[25px] font-medium border-b-2 border-solid border-gray-400">контакты</p>
+                <p class="text-[20px] sm:text-[25px] font-medium border-b-2 border-solid border-gray-400">Kontaktlar</p>
                 <ul class="flex flex-col items-start gap-3:">
                     <li>
                         <a class="flex items-center gap-2" href="#"><img
@@ -347,24 +359,22 @@
                 </ul>
             </div>
             <div>
-                <p class="text-[20px] sm:text-[25px] font-medium border-b-2 border-solid border-gray-400">социальные
-                    сети</p>
+                <p class="text-[20px] sm:text-[25px] font-medium border-b-2 border-solid border-gray-400">ijtimoiy
+                    tarmoqlar</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</p>
-                <div class="flex items-center gap-2">
-                    <img src="./assets/images/footer/Vector (4).svg" alt="">
-                    <img src="./assets/images/footer/Vector (4).svg" alt="">
-                    <img src="./assets/images/footer/Vector (4).svg" alt="">
-                    <img src="./assets/images/footer/Vector (4).svg" alt="">
-                    <img src="./assets/images/footer/Vector (4).svg" alt="">
+                <div class="flex items-center gap-4">
+                    <a href="https://www.youtube.com/"><img src="./assets/images/footer/Vector (4).svg" alt=""></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
                 </div>
             </div>
         </div>
         <div class=" border-t-2 border-gray-400 border-solid">
             <div class="container-fluit  grid py-5 md:grid-cols-2 lg:grid-cols-4 justify-between items-center">
-                <p>(c) 2020 OJJO jewelry</p>
-                <p>Договор публичной офферты</p>
-                <p>Контрагентам</p>
-                <p>Сделано Figma.info</p>
+                <p>(c) 2024 Nilufar zargarlik</p>
+                <p>Ommaviy taklif shartnomasi</p>
+                <p>Pudratchilarga</p>
+                <p>Websahifa Nilufar tomonidan yaratilgan</p>
             </div>
         </div>
     </footer>
